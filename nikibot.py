@@ -18,7 +18,8 @@ import openai
 load_dotenv()
 openai.api_key = os.getenv("OPENAI_API_KEY")
 completion = openai.Completion()
-WEB_CLIENT = WebClient(token=os.environ.get("SLACKBOT_NIKI_TOKEN"))
+#WEB_CLIENT = WebClient(token=os.environ.get("SLACKBOT_NIKI_TOKEN"))
+WEB_CLIENT = WebClient(token=os.environ.get("SLACK_BOT_TOKEN8"))
 CHANNEL_NAME = "few-new-innovations"
 CONVERSATION_ID = None
 
@@ -117,4 +118,4 @@ if __name__ == "__main__":
             print(f" {myBot._botName}: No Conversation ID found. Please check channel name for validity.")
 
     except Exception as e:
-        print(f" {myBot._botName}: Error: {e}")
+        print(f" Error: {e}")
