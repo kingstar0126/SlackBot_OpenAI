@@ -11,6 +11,7 @@ from response_map import response_dict
 from triggers import get_response_key
 from dotenv import load_dotenv
 from random import choice
+from flask import Flask, request
 import os
 import openai
 
