@@ -27,4 +27,6 @@ def get_response_key(command):
     for key, value in search_triggers:
         if re.search(key, command):
             return value
-    return "search"
+    #return "search"
+    #Instead, ask GPT3
+    return None
