@@ -13,9 +13,9 @@ from urllib.parse import urlencode, quote_plus
 def check_weather(place):
     """Uses Pyowm API to check weather results for specified region"""
     try:
-        fluff_words = ["out", "in", "over", "there", "like", "here"]
-        place = place.replace("?", "").split('weather')[1].split(", ")
-        place = ",".join(filter(lambda x: x not in fluff_words, place)).strip()
+        fluff_words = ["how", "is", "out", "in", "over", "there", "like", "here"]
+        place = place.replace("?", "").split('weather')[1].split()
+        place = " ".join(filter(lambda x: x not in fluff_words, place)).strip()
 
         if place:
             key = os.environ.get('PYOWM_KEY')
