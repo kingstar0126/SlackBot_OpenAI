@@ -66,7 +66,7 @@ def get_pic(command):
             "gsc.page": 1
             }
 
-    #https://cse.google.com/cse?cx=006405748280275879734:wc84nu63t5i&key=AIzaSyARi8ukdOtCgQkzcqB2poiCzpJiKX26oHU&searchType=image&q=dogs#gsc.tab=1&gsc.q=dogs&gsc.page=1
+    #https://cse.google.com/cse?cx=<>&key=<>&searchType=image&q=dogs#gsc.tab=1&gsc.q=dogs&gsc.page=1
 
     resp.raise_for_status()
     images = [im['link'] for im in resp.json()['items']]
