@@ -95,7 +95,7 @@ if __name__ == "__main__":
         print(f" {myBot._botName}: now online!")
         print(f" {myBot._botName}: Serving channel: {CHANNEL_NAME}, Conversation ID: {CONVERSATION_ID}")
 
-        while CONVERSATION_ID:
+        while False and CONVERSATION_ID:
             try:
                 result = WEB_CLIENT.conversations_history(
                         channel=CONVERSATION_ID, inclusive=False,
