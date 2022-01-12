@@ -18,8 +18,8 @@ import openai
 load_dotenv()
 openai.api_key = os.getenv("OPENAI_API_KEY")
 completion = openai.Completion()
-#WEB_CLIENT = WebClient(token=os.environ.get("SLACKBOT_NIKI_TOKEN"))
-WEB_CLIENT = WebClient(token=os.environ.get("SLACK_BOT_TOKEN8"))
+WEB_CLIENT = WebClient(token=os.environ.get("SLACKBOT_NIKI_TOKEN"))
+#WEB_CLIENT = WebClient(token=os.environ.get("SLACK_BOT_TOKEN8"))
 CHANNEL_NAME = "few-new-innovations"
 CONVERSATION_ID = None
 
